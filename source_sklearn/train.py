@@ -55,7 +55,7 @@ if __name__ == '__main__':
     train_x = train_data.iloc[:,1:]
     
     
-    model = RandomForestClassifier(max_depth=max_depth,random_state=0)
+    model = RandomForestClassifier(max_depth=5, random_state=0)
     
     model.fit(train_x, train_y)
     
